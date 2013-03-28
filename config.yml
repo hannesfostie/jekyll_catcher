@@ -1,0 +1,5 @@
+applications:
+  sockapidocs:
+    url: https://github.com/hannesfostie/sockapidocs
+    path: /home/testapidocs/apps/jekyll
+
