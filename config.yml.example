@@ -1,0 +1,5 @@
+applications:
+  app_name:
+    url: https://github.com/user/repo
+    path: /home/account_name/apps/appname
+

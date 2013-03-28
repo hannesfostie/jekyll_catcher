@@ -4,7 +4,6 @@ require 'json'
 require 'yaml'
 
 class JekyllHookReceiver
-
   def call(env)
     @request = Rack::Request.new(env)
     @response = Rack::Response.new
@@ -16,7 +15,7 @@ class JekyllHookReceiver
     config = YAML.load_file('config.yml')
     payload = JSON.parse(@request.POST["payload"])
     repo = payload["repository"]["name"]
-    
+
     repo_url = payload["repository"]["url"]
     application = config["applications"][repo]
 
