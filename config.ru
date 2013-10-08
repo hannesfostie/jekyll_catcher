@@ -1,4 +1,4 @@
 require 'rubygems'
 require 'rack'
-require './jekyll_hook_receiver.rb'
-run JekyllHookReceiver.new
+require './jekyll_catcher.rb'
+run JekyllCatcher.new
