@@ -1,0 +1,14 @@
+module JekyllCatcher
+  module Task
+    class LocalDeploy
+      def initialize(config)
+        @config = config
+      end
+
+      def call
+        puts "Doing something!"
+      end
+    end
+  end
+end
+
