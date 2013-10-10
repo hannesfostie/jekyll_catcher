@@ -1,5 +1,5 @@
-applications:
-  app_name:
-    url: https://github.com/user/repo
-    path: /home/account_name/apps/appname
+app_name:
+  url: https://github.com/user/repo
+  path: /home/account_name/apps/appname
+  jekyll_catcher_task_name: local_deploy
 
