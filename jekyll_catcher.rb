@@ -4,8 +4,8 @@ require 'ipaddr'
 require 'json'
 require 'yaml'
 
-Dir[File.dirname(__FILE__) + 'tasks/*.rb'].each do |file|
-  require File.basename(file, File.extname(file))
+Dir[File.dirname(__FILE__) + '/tasks/*.rb'].each do |file|
+  require file
 end
 
 module JekyllCatcher
