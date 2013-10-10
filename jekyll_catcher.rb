@@ -51,7 +51,7 @@ module JekyllCatcher
       [
         IPAddr.new('192.30.252.0/22'),
         IPAddr.new('204.232.175.64/27')
-      ].any? { |ip_range| ip_range.include?(@request.ip) }
+      ].any? { |ip_range| ip_range.include?(@request.env["HTTP_X_REAL_IP"]) }
     end
   end
 end
