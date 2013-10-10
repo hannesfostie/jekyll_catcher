@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'rack'
+require 'ipaddr'
 require 'json'
 require 'yaml'
 
