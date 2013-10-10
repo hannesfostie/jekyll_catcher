@@ -19,9 +19,10 @@ module JekyllCatcher
 
     def handle_request
       begin
-      rescue
         return @response.write "You're doing it wrong!" unless originated_from_github?
         JekyllCatcher::Task.const_get(camelize(config['jekyll_catcher_task_name'])).new(config).call
+      rescue Exception => exception
+        puts exception.inspect
         return @response.write "You're doing it wrong!"
       end
       @response.write "Well done, sir!"
